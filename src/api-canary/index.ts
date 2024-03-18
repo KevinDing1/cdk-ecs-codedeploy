@@ -204,7 +204,7 @@ export class ApiCanary extends Canary {
     const canaryAsset = new Asset(scope, `${id}ApiCanaryAsset`, {
       path: bundler.codePath,
       bundling: {
-        image: DockerImage.fromRegistry('node:20'),
+        image: DockerImage.fromRegistry('node:14'),
         local: bundler,
       },
     });
